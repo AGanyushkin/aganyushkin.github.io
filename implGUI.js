@@ -66,7 +66,7 @@ function draw (points, view) {
         printPointInfo(ctx, screenX, screenY, points, i)
     }
 
-    printDataInfo(ctx, points, view)
+    // printDataInfo(ctx, points, view)
 }
 
 function printPointInfo (ctx, screenX, screenY, points, i) {
