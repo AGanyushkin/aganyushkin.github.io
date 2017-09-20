@@ -73,7 +73,7 @@ function workerCallback(worker, e) {
             if (gData.stepDoneCounter === 0) {
                 // console.log('itt - done');
 
-                if (++gData.counter > 1000) {
+                if (++gData.counter > 500) {
                     gData.counter = 0;
                     let {points, view} = initModel(scope.width, scope.height);
                     gData.points = points;
