@@ -5,7 +5,7 @@ const RK_DEF_H = 1e3; // [c]
 const MAX_ATTEMPTS = 100;
 const M_MAX = 3;
 const M_MIN = 1;
-const POOL_SIZE = 400;
+const POOL_SIZE = 300;
 
 const POINT_X = 0;
 const POINT_Y = 1;
