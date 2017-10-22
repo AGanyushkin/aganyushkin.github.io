@@ -2,6 +2,15 @@
 function onload () {
     window.addEventListener("deviceorientation", handleOrientation, true);
     window.addEventListener("devicemotion", handleMotion, true);    
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+}
+
+function showPosition(position) {
+    document.getElementById('latitude').innerHTML = `latitude: ${position.coords.latitude}`;
+    document.getElementById('longitude').innerHTML = `longitude: ${position.coords.longitude}`;
 }
 
 function handleOrientation(event) {
